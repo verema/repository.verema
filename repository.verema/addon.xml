@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.verema" name="Verema Repository" version="1.0.2" provider-name="Marce - Verema">
+	<extension point="xbmc.addon.repository" name="Verema Repository">
+		<info compressed="false">http://raw.github.com/verema/repository.verema/master/addons.xml</info>
+		<checksum>http://raw.github.com/verema/repository.verema/master/addons.xml.md5</checksum>
+		<datadir zip="true">http://raw.github.com/verema/repository.verema/master/repo/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Actualizaciones Kodi addons</summary>
+		<description>Repositorio con todo lo necesario para instalar sin problemas Marce - Verema</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
