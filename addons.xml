@@ -83,6 +83,27 @@
 
 </addon>
 
+<addon id="plugin.program.chrome.launcher" name="Chrome Launcher" version="1.1.5" provider-name="alelec (AddonScriptorDE)">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.pydevd" version="2.1.0" optional="true"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">Launch websites via Chrome in Kiosk-mode</summary>
+        <language></language>
+        <description lang="en">Launch websites via Chrome in Kiosk-mode</description>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <source>https://github.com/AddonScriptorDE/plugin.program.chrome.launcher</source>
+        <forum>http://forum.xbmc.org/showthread.php?tid=170965</forum>
+        <email>AddonScriptorDE at yahoo dot de</email>
+        <website></website>
+    </extension>
+</addon>
+
 <addon id="plugin.program.echoinstaller"
 	     name="[COLOR lime]ECHO[/COLOR] [COLOR white]Addon Installer[/COLOR]"
 	     version="1.13"
@@ -865,6 +886,124 @@
   </extension>
 </addon>
 
+<addon id="program.plexus"
+       name="Plexus"
+       version="0.1.6.a"
+       provider-name="enen92, TVAddons, RonnieHD">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.requests" />
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>executable</provides>
+  </extension>
+
+  <extension point="xbmc.addon.metadata">
+    <summary>SopCast and AceStream for Kodi</summary>
+    <description lang="en">Plexus - Any complex structure containing an intricate network of parts. Plexus brings native peer-to-peer support (AceStream and SopCast) for Kodi Entertainment Center for several platforms.[CR][CR]Documentation: (missing)</description>
+    <description lang="pt">Plexus - Uma estrutura complexa constituída por uma rede de partes. O Plexus adiciona suporte peer-to-peer nativo (AceStream e Sopcast) ao Kodi Entertainment Center para várias plataformas.[CR][CR]Documentação: (em falta)</description>
+    <description lang="es">Plexus - Una estructura compleja conteniendo una intrincada red de partes. Plexus añade soporte nativo peer-to-peer (AceStream y SopCast) al Centro de Entretenimiento Kodi para varias plataformas.[CR][CR]Documentacion: (falta)</description>
+	<disclaimer lang="en">The author does not host nor distribute any of the content you may watch using this addon. The author has no part in the development of any included technologies. When seeking help in Kodi's forum please respect rules (http://kodi.wiki/view/Forum_rules).</disclaimer>
+    <disclaimer lang="pt">Os autores não alojam nem distribuem nenhum do conteúdo que poderá ser reproduzido a partir deste addon. Os autores não têm qualquer parte no desenvolvimento de qualquer uma das tecnologias. Se procurar ajuda no fórum oficial do Kodi por favor respeite as regras do fórum (http://kodi.wiki/view/Forum_rules).</disclaimer>
+   	<disclaimer lang="es">El autor no aloja ni distribuye cualquier contenido que ud. pudiera reproducir usando este addon. El autor no tiene participacion en el desarrollo de cualquier tecnologia incluida. Cuando requiera ayuda en el foro de Kodi por favor respete las reglas (http://kodi.wiki/view/Forum_rules).</disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="repository.catoal" name="Catoal repository" version="1.0.2" provider-name="Catoal">
+	<extension point="xbmc.addon.repository" name="Catoal Repository">
+		<info compressed="false">http://raw.github.com/catoalkodi/repository.catoal/master/addons.xml</info>
+		<checksum>http://raw.github.com/catoalkodi/repository.catoal/master/addons.xml.md5</checksum>
+		<datadir zip="true">http://raw.github.com/catoalkodi/repository.catoal/master/repo/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Catoal Addon</summary>
+		<description>Repositorio con todo lo necesario para instalar sin problemas Catoal.</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.echo" name="[COLOR greenyellow]ECHO[/COLOR] [COLOR white]Repository[/COLOR]" version="1.04" provider-name="Echo Coder">
+	<extension point="xbmc.addon.repository" name="Echo Coder Repository">
+		<dir>
+			<info compressed="false">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml</info>
+			<checksum>https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/zips/</datadir>
+		</dir>
+		<info compressed="false">https://raw.githubusercontent.com/echocoderkodi/repository.echo/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/echocoderkodi/repository.echo/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/echocoderkodi/repository.echo/master/zips/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>The official Echo Coder Repository.</summary>
+		<description>Support available at Twitter: @EchoCoder</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.Kinkin" name="Kinkins REPO" version="1.4" provider-name="Kinkin">
+	<extension point="xbmc.addon.repository" name="Kinkin Addon Repository">
+		<info compressed="false">https://offshoregit.com/kinkin-xbmc-repository/addons.xml</info>
+		<checksum>https://offshoregit.com/kinkin-xbmc-repository/addons.xml.md5</checksum>
+		<datadir zip="true">https://offshoregit.com/kinkin-xbmc-repository/zips</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Install Kinkins Addons</summary>
+		<description>Install addons by Kinkin</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.myshows.me" name="MyShows.me Kodi Repo" version="1.0.5" provider-name="DiMartino">
+	<extension point="xbmc.addon.repository" name="MyShows.me Kodi Repo">
+		<info compressed="false">http://api.bitbucket.org/1.0/repositories/DiMartino/myshows.me-kodi-repo/raw/default/addons.xml</info>
+		<checksum>http://api.bitbucket.org/1.0/repositories/DiMartino/myshows.me-kodi-repo/raw/default/addons.xml.md5</checksum>
+		<datadir zip="true">http://api.bitbucket.org/1.0/repositories/DiMartino/myshows.me-kodi-repo/raw/default/repo/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Устанавливайте дополнения из репозитория MyShows.me</summary>
+		<description>Дополнения для Kodi</description>
+		<disclaimer>DiMartino</disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.ronniehd" name="RonnieHD repository" version="1.0.1" provider-name="RonnieHD">
+	<extension point="xbmc.addon.repository" name="RonnieHD Repository">
+		<info compressed="false">https://raw.githubusercontent.com/ronniehd/repository.ronniehd/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/ronniehd/repository.ronniehd/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://github.com/ronniehd/repository.ronniehd/raw/master/zips</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Third party Kodi addons updates/mods</summary>
+		<description>RonnieHD Repository</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.shani" name="Shanis Addon Repository" version="2.9" provider-name="Shani">
+	<extension point="xbmc.addon.repository" name="Shanis Addon Repository">
+        <dir>
+			<info compressed="false">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml</info>
+			<checksum>https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/zips/</datadir>
+		</dir>
+
+    <info compressed="false">https://offshoregit.com/Shani-08/main/addons.xml</info>
+    <checksum>https://offshoregit.com/Shani-08/main/addons.xml.md5</checksum>
+    <datadir zip="true">https://offshoregit.com/Shani-08/main/zips</datadir>
+
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Addons related to XBMC for Zemtv etc</summary>
+		<description>Go though the plugins and see what you like</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
 <addon id="repository.verema" name="Verema Repository" version="1.0.2" provider-name="Marce - Verema">
 	<extension point="xbmc.addon.repository" name="Verema Repository">
 		<info compressed="false">http://raw.github.com/verema/repository.verema/master/addons.xml</info>
@@ -876,6 +1015,412 @@
 		<description>Repositorio con todo lo necesario para instalar sin problemas Marce - Verema</description>
 		<disclaimer></disclaimer>
 		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.vstream"
+        name="vStream Repository"
+        version="0.0.1"
+        provider-name="Venom">
+    <extension point="xbmc.addon.repository" name="vStream XBMC Addon Repository">
+        <checksum>https://raw.githubusercontent.com/LordVenom/venom-xbmc-addons/master/addons.xml.md5</checksum>
+        <info compressed="false">https://raw.githubusercontent.com/LordVenom/venom-xbmc-addons/master/addons.xml</info>
+        <datadir zip="true">https://github.com/LordVenom/venom-xbmc-addons/raw/master/repo</datadir>
+    </extension>
+
+    <extension point="xbmc.addon.metadata">
+        <summary lang="fr">vStream Repository</summary>
+        <description lang="fr">Installer vStream</description>
+        <summary lang="en">vStream Repository</summary>
+        <description lang="en">Download and install vStream</description>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="repository.xbmc-israel" name=".[COLOR blue]XBMC Israeli [/COLOR][COLOR white] Streaming Sites[/COLOR]" version="1.0.4" provider-name="cubicle-vdo">
+    <extension point="xbmc.addon.repository" name="XBMC Israeli streaming repo for streaming sites">
+        <info compressed="false">https://raw.githubusercontent.com/cubicle-vdo/xbmc-israel/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/cubicle-vdo/xbmc-israel/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/cubicle-vdo/xbmc-israel/master/repo</datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>XBMC Israeli Streaming Sites</summary>
+        <description>Download and install addons for XBMC Israeli streaming repo for streaming sites</description>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="repository.ytplugin" name="Youtube Addon Repo" version="1.0" provider-name="Jeffrey Frasure">
+	<extension point="xbmc.addon.repository" name="Youtube Addon Repository">
+		<info compressed="false">https://github.com/jdf76/repository/raw/master/addons.xml</info>
+		<checksum>https://github.com/jdf76/repository/raw/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://github.com/jdf76/repository/raw/master/zips</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Install Kodis Youtube Addons</summary>
+                <description>Download and install addons from the Kodi Youtube group. This plugin is not official from Google.</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id='script.module.libtorrent' version='1.1.1d' name='python-libtorrent' provider-name='DiMartino, srg70, RussakHH, aisman, inpos'>
+  <requires>
+    <import addon='xbmc.python' version='2.1.0'/>
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.python.module" library="python_libtorrent"/>
+  <extension point='xbmc.addon.metadata'>
+    <platform>all</platform>
+    <summary lang='en'>script.module.libtorrent is a Kodi module that makes easy import of python-libtorrent for you.</summary>
+    <summary lang='ru'>script.module.libtorrent - модуль Kodi, который упрощает импорт библиотеки python-libtorrent.</summary>
+    <license>MIT License</license>
+    <source>https://github.com/DiMartinoXBMC/script.module.libtorrent</source>
+  </extension>
+  <extension point='xbmc.python.module'/>
+</addon>
+
+<addon id="script.module.magnetic" name="[COLOR FFFFD800]Magnetic[/COLOR] Torrent Manager" version="0.9.84b"
+       provider-name="mancuniancol">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="main.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="kodi.context.item" library="contextitem.py">
+        <item>
+            <label>32010</label>
+            <visible>StringCompare(ListItem.dbtype,movie) | StringCompare(ListItem.dbtype,tvshow) |
+                StringCompare(ListItem.dbtype,season)|!String.IsEmpty(ListItem.OriginalTitle)|
+                !String.IsEmpty(ListItem.IMDBNumber)|!String.IsEmpty(ListItem.TVShowTitle)|
+                !String.IsEmpty(ListItem.Season)|!String.IsEmpty(ListItem.Episode)
+            </visible>
+        </item>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="startup"/>
+    <extension point="xbmc.python.module" library="resources/lib"/>
+    <extension point="xbmc.addon.metadata">
+        <summary>Magnets and Torrents Collector</summary>
+        <description>Magnetic is Add-on for Kodi which allows to search torrents for other Add-ons like Quasar or
+            Torrent V2.[CR]It also can work independently using the action called Magnetizer in any contextual menu in
+            Kodi.
+        </description>
+        <disclaimer>The author does not host or distribute any of the content displayed by this addon.[CR]The author
+            does not have any affiliation with the content provider.
+        </disclaimer>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <website>http://tvaddons.ag/</website>
+        <forum>https://forums.tvaddons.ag/addon-releases/31572-pulsar-providers-unofficial-pulsar-repo.html</forum>
+        <source>https://github.com/mancuniancol/script.module.magnetic</source>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+            <screenshot>resources/screenshots/screenshot1.PNG</screenshot>
+            <screenshot>resources/screenshots/screenshot2.PNG</screenshot>
+            <screenshot>resources/screenshots/screenshot3.PNG</screenshot>
+        </assets>
+    </extension>
+</addon>
+
+<addon id="script.module.mctools" name="common tools mc" version="1.3.7" provider-name="mancuniancol">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.beautifulsoup4" optional="false"/>
+    <import addon="script.module.html5lib" optional="false"/>
+    <import addon="script.module.requests" optional="false"/>
+    <import addon="script.module.feedparser" optional="false"/>
+    <import addon="script.module.xbmcswift2" optional="false"/>
+    <import addon="script.module.simplejson" optional="false"/>
+    <import addon="script.module.metahandler" optional="false"/>
+    <import addon="script.module.httplib2" optional="false"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Collection of common tools for addons</summary>
+    <description lang="en">Collection of tools from different authors.  All the credit should be given to them</description>
+    <disclaimer lang="en"></disclaimer>
+    <language></language>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum>http://forums.tvaddons.ag/addon-releases/37973-torrent-rss-kickass-yts-torrentz-viewers-3.html#post314231</forum>
+    <website>https://github.com/mancuniancol/script.module.mctools</website>
+    <email></email>
+    <source></source>
+  </extension>
+</addon>
+
+<addon id="script.module.youtube.dl" name="youtube-dl Control" version="16.1026.0" provider-name="Rick Phillips (ruuk)">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0" />
+        <import addon="script.module.addon.signals" version="0.0.1"/>
+    </requires>
+    <extension point="xbmc.python.script" library="control.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">Module providing access to youtube-dl video stream extraction</summary>
+        <description lang="en">Module providing access to youtube-dl video stream extraction for hundreds of sites. Version is based on youtube-dl date version: YY.MDD.V where V is the addon specific sub-version. Also provides downloading with the option for background downloading with a queue and queue manager.</description>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <forum>http://forum.xbmc.org/showthread.php?tid=200877</forum>
+        <source>http://github.com/ruuk/script.module.youtube.dl</source>
+    </extension>
+</addon>
+
+<addon id="script.plex"
+       name="Plex"
+       version="0.0.99"
+       provider-name="Plex">
+    <requires>
+        <import addon="xbmc.python" version="2.24.0"/>
+        <import addon="script.module.requests" version="2.3.0"/>
+    </requires>
+    <extension point="xbmc.python.script" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.python.pluginsource" library="plugin.py"></extension>
+    <extension point="xbmc.service" library="service.py" start="startup"></extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Plex for Kodi</summary>
+        <description lang="en">Official Plex for Kodi add-on</description>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <forum>https://forums.plex.tv/categories/plex-for-kodi</forum>
+        <website>https://www.plex.tv</website>
+        <source>https://github.com/plexinc/plex-for-kodi</source>
+        <platform>all</platform>
+        <disclaimer>This beta release requires a Plex Pass</disclaimer>
+    </extension>
+</addon>
+
+<addon id="skin.blackglassnova" version="1.0.1" name="Black Glass Nova Veremapc" provider-name="Veremapc - Marce">
+    <requires>
+        <import addon="xbmc.gui" version="5.12.0"/>
+        <import addon="script.favourites" version="3.2.0"/>
+        <import addon="script.skinshortcuts" version="0.2.4"/>
+        <import addon="resource.images.weatherfanart.single" version="0.0.4"/>
+        <import addon="resource.images.weathericons.transparent" version="0.0.4"/>
+        <import addon="resource.images.studios.white" version="0.0.6"/>
+        <import addon="resource.images.recordlabels.white" version="0.0.6"/>
+        <import addon="resource.uisounds.nebula" version="0.0.1"/>
+        <import addon="resource.images.languageflags.colour" version="0.0.2"/>
+        <import addon="script.image.resource.select" version="0.0.5"/>
+    </requires>
+    <extension point="xbmc.gui.skin" debugging="false">
+        <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i"/>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="de">Von MediaPortal portiert, ist Black Glass Nova ein einfach zu bedienendes und ein an Fankunst orientiertes Skin.</summary>
+        <summary lang="el">Προερχόμενο από το MediaPortal, το Black Glass Nova είναι ένα εύκολο στη χρήση κέλυφος, με προσανατολισμό στα fanart.</summary>
+        <summary lang="en">Ported from MediaPortal, Black Glass Nova is an easy to use and fanart oriented skin designed for Full HD TV screens.</summary>
+        <summary lang="en_AU">Ported from MediaPortal, Black Glass Nova is an easy to use and fanart oriented skin designed for Full HD TV screens.</summary>
+        <summary lang="en_NZ">Ported from MediaPortal, Black Glass Nova is an easy to use and fanart oriented skin designed for Full HD TV screens.</summary>
+        <summary lang="en_US">Ported from MediaPortal, Black Glass Nova is an easy to use and fanart oriented skin designed for Full HD TV screens.</summary>
+        <summary lang="es">Portado desde MediaPortal, Black Glass Nova es una piel facil de usar hecha para fanart</summary>
+        <summary lang="fr_CA">Porté de MediaPortal, Black Glass Nova est un habillage simple à utiliser et consacré au fanart.</summary>
+        <summary lang="he">המעטפת Black Glass Nova שבמקור נוצרה עבור MediaPortal, הינה קלה לשימוש, עושה שימוש רב בפאנארט ומותאמת במיוחד למסכים באבחנת Full HD.</summary>
+        <summary lang="hu">A MediaPortal portolása, Black Glass Nova egy könnyen használható fanart orientált felszín.</summary>
+        <summary lang="it">Trasferita da MediaPortal, Black Glass Nova è una skin facile da utilizzare e orientata alle fanart, progettata per TV Full HD.</summary>
+        <summary lang="ko">MediaPortal에서 포팅된 Black Glass Nova는 사용하기 쉽고 팬아트를 지원하는 스킨입니다.</summary>
+        <summary lang="lt">Perkeltas iš MediaPortal, 'Black Glass Nova' paprasta naudotis ir orentuotas į FanArt.</summary>
+        <summary lang="ms">Diambil dari  MediaPortal, Black Glass Nova merupakan kulit berorientasikan seni peminat yang mudah digunakan.</summary>
+        <summary lang="nl">Geport van MediaPortal, Black Glass Nova is een gemakkelijk in gebruik zijnde en fan-art georiënteerde skin.</summary>
+        <summary lang="pl">Przeniesiona z programu MediaPortal, Black Glass Nova jest łatwą w użyciu i skupioną na prezentacji fototapet skórą, która została zaprojektowana pod kątem wyświetlania na ekranach Full HD.</summary>
+        <summary lang="pt">Convertido do MediaPortal, Black Glass Nova é um tema fácil de usar e orientado para uso de fanart.</summary>
+        <summary lang="pt_BR">Portada do MediaPortal, a Black Glass Nova é uma skin fácil de usar e orientada a fanart.</summary>
+        <summary lang="ru">Портирована с MediaPortal, Black Glass Nova - это простая в использовании и ориентированная на фанарты обложка.</summary>
+        <summary lang="sv">Black Glass Nova är ett lätthanterat och fanart orienterat skal som är porterat från MediaPortal.</summary>
+        <summary lang="zh">由MediaPortal移植而来，Black Glass Nova 是一个面向易用和同人画的皮肤。</summary>
+        <description lang="de">Von MediaPortal portiert, ist Black Glass Nova ein einfach zu bedienendes und ein an Fankunst orientiertes Skin.</description>
+        <description lang="el">Προερχόμενο από το MediaPortal, το Black Glass Nova είναι ένα εύκολο στη χρήση κέλυφος, με προσανατολισμό στα fanart.</description>
+        <description lang="en">Ported from MediaPortal, Black Glass Nova is an easy to use and fanart oriented skin designed for Full HD TV screens.</description>
+        <description lang="en_AU">Ported from MediaPortal, Black Glass Nova is an easy to use and fanart oriented skin designed for Full HD TV screens.</description>
+        <description lang="en_NZ">Ported from MediaPortal, Black Glass Nova is an easy to use and fanart oriented skin designed for Full HD TV screens.</description>
+        <description lang="en_US">Ported from MediaPortal, Black Glass Nova is an easy to use and fanart oriented skin designed for Full HD TV screens.</description>
+        <description lang="es">Portado desde MediaPortal, Black Glass Nova es una piel facil de usar hecha para fanart</description>
+        <description lang="fr_CA">Porté de MediaPortal, Black Glass Nova est un habillage simple à utiliser et consacré au fanart.</description>
+        <description lang="he">המעטפת Black Glass Nova שבמקור נוצרה עבור MediaPortal, הינה קלה לשימוש, עושה שימוש רב בפאנארט ומותאמת במיוחד למסכים באבחנת Full HD.</description>
+        <description lang="hu">A MediaPortal portolása, Black Glass Nova egy könnyen használható fanart orientált felszín.</description>
+        <description lang="it">Trasferita da MediaPortal, Black Glass Nova è una skin facile da utilizzare e orientata alle fanart, progettata per TV Full HD.</description>
+        <description lang="ko">MediaPortal에서 포팅된 Black Glass Nova는 사용하기 쉽고 팬아트를 지원하는 스킨입니다.</description>
+        <description lang="lt">Perkeltas iš MediaPortal, 'Black Glass Nova' paprasta naudotis ir orentuotas į FanArt.</description>
+        <description lang="ms">Diambil dari  MediaPortal, Black Glass Nova merupakan kulit berorientasikan seni peminat yang mudah digunakan.</description>
+        <description lang="nl">Geport van MediaPortal, Black Glass Nova is een gemakkelijk in gebruik zijnde en fan-art georiënteerde skin.</description>
+        <description lang="pl">Przeniesiona z programu MediaPortal, Black Glass Nova jest łatwą w użyciu i skupioną na prezentacji fototapet skórą, która została zaprojektowana pod kątem wyświetlania na ekranach Full HD.</description>
+        <description lang="pt">Convertido do MediaPortal, Black Glass Nova é um tema fácil de usar e orientado para uso de fanart.</description>
+        <description lang="pt_BR">Portada do MediaPortal, a Black Glass Nova é uma skin fácil de usar e orientada a fanart.</description>
+        <description lang="ru">Портирована с MediaPortal, Black Glass Nova - это простая в использовании и ориентированная на фанарты обложка.</description>
+        <description lang="sv">Black Glass Nova är ett lätthanterat och fanart orienterat skal som är porterat från MediaPortal.</description>
+        <description lang="zh">由MediaPortal移植而来，Black Glass Nova 是一个面向易用和同人画的皮肤。</description>
+        <disclaimer lang="en">This skin does not work on Apple Tv 2</disclaimer>
+        <disclaimer lang="it">Questa skin non funziona su Apple Tv 2</disclaimer>
+        <license>Creative Commons Attribution-ShareAlike 3.0 Unported License</license>
+        <forum>http://forum.kodi.tv/forumdisplay.php?fid=208</forum>
+        <source>http://verema.000webhostapp.com/skin.blackglassnova</source>
+
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+            <screenshot>screenshots/screenshot01.jpg</screenshot>
+            <screenshot>screenshots/screenshot02.jpg</screenshot>
+            <screenshot>screenshots/screenshot03.jpg</screenshot>
+            <screenshot>screenshots/screenshot04.jpg</screenshot>
+            <screenshot>screenshots/screenshot05.jpg</screenshot>
+            <screenshot>screenshots/screenshot06.jpg</screenshot>
+            <screenshot>screenshots/screenshot07.jpg</screenshot>
+            <screenshot>screenshots/screenshot08.jpg</screenshot>
+            <screenshot>screenshots/screenshot09.jpg</screenshot>
+            <screenshot>screenshots/screenshot10.jpg</screenshot>
+        </assets>
+    </extension>
+</addon>
+
+<addon id="superrepo.kodi.jarvis.all" name="SuperRepo All [Jarvis][v7]" version="0.7.04" provider-name="Bart Otten">
+                <requires>
+                <import addon="xbmc.addon" version="12.0.0"/>
+                </requires>
+                <extension point="xbmc.addon.repository" name="SuperRepo All [Jarvis][v7]">
+                <info compressed="false">
+                http://xml.superrepo.org/v7/.xml/jarvis/all/addons.xml
+                </info>
+                <checksum>
+                http://md5.superrepo.org/v7/.md5/jarvis/all/addons.xml.md5
+                </checksum>
+                <datadir zip="true">http://redirect.superrepo.org/v7/addons/</datadir>
+                <hashes>true</hashes>
+                </extension>
+                <extension point="xbmc.addon.metadata">
+                <summary>
+                Install add-ons from the SuperRepo All Repository
+                </summary>
+                <summary lang="nl">
+                Installeer add-ons uit de SuperRepo All Repository
+                </summary>
+                <summary lang="cz">Inštalácia add-ons zo SuperRepo All Repozitár</summary>
+                <summary lang="de">
+                Installation von Addons aus dem SuperRepo All Repository
+                </summary>
+                <summary lang="pt">Instale add-ons do SuperRepo All Repositório</summary>
+                <summary lang="br">Instale add-ons do SuperRepo All Repositório</summary>
+                <description>
+                Download and install add-ons for Kodi in the category "All" using SuperRepo.[CR][CR]By using SuperRepo repositories you will be able to take advantage of our serverside dependency checking, extensive file mirror service and many more.[CR]Visit our website at https://superrepo.org/ to browse the add-ons, create personal addon bundles and install whole bundles at once![CR][CR]
+                </description>
+                <description lang="nl">
+                Download and installeer add-ons voor Kodi in de categorie "All" via SuperRepo.[CR]Door SuperRepo te installeren kunt u profiteren van onze controle van add-ons en ons uitgebreide server netwerk. Bezoek onze website op https://superrepo.org om door de add-ons te bladeren, persoonlijke add-on bundels te maken en complete bundels in 1 keer te installeren![CR][CR]
+                </description>
+                <description lang="cz">
+                Preber a inštaluj add-ons do kategórie "All" z SuperRepo.org add-on repozitár.[CR][CR]Ak si našiel add-on ktorý je poškodený alebo nefunkčný, alebo chceš pridať nový add-on, potom prosím pozri na https://superrepo.org/[CR][CR]Repozitár je udržiavaný komunitou Kodi a za pomoci SuperRepo Wiki, a tento preberá add-ons z rôznych zdrojov. Vzhľadom na to, SuperRepo nenesie žiadnu zodpovednosť za služby poskytované týmito add-ons.[CR][CR]Rozšírený repozitár vyvinul Bart Otten[CR][CR]
+                </description>
+                <description lang="de">
+                Lade und installiere Addons der Kategorie "All" aus dem SuperRepo.org Addon Repository.[CR][CR]Möchtest du ein fehlerhaftes Addon melden oder ein neues Addon vorschlagen, kannst du dies über unsere Webseite http://superrepo.org tun.[CR][CR]Das Repository wird mit Hilfe des SuperRepo Wiki durch die Kodi Community gepflegt und durch unseren Generator aus mehreren Quellen zusammengestellt. Daher übernimmt SuperRepo keinerlei Verantwortung für diesen Service.[CR][CR]Der"eXtended Reposity Generator" wird durch Bart Otten entwickelt.[CR][CR]
+                </description>
+                <description lang="pt">
+                Baixe e instale o add-ons na categoria "All" do Repositório SuperRepo.org. [CR] [CR] Se você encontrar um add-on quebrado ou não funcionando, ou você gostaria de incluir um outro, por favor visite https://superrepo.org/ [CR] [CR]O repositório é mantida pela comunidade do Kodi usando o Wiki do SuperRepo e o nosso gerador de busca de add-ons múltiplas fontes. Portanto SuperRepo não aceita qualquer responsabilidade por esse serviço.[CR][CR]O Gerador Reposity eXtended é desenvolvido por Bart Otten[CR][CR]
+                </description>
+                <description lang="br">
+                Baixe e instale o add-ons na categoria "All" do Repositório SuperRepo.org. [CR] [CR] Se você encontrar um add-on quebrado ou não funcionando, ou você gostaria de incluir um outro, por favor visite https://superrepo.org/ [CR][CR]O repositório é mantida pela comunidade do Kodi usando o Wiki do SuperRepo e o nosso gerador de busca de add-ons múltiplas fontes. Portanto SuperRepo não aceita qualquer responsabilidade por esse serviço.[CR][CR]O Gerador Reposity eXtended é desenvolvido por Bart Otten[CR][CR]
+                </description>
+                <disclaimer>
+                The SuperRepo generator fetches addons from multiple sources. Therefore SuperRepo accepts no responsibility for included addons.[CR]
+                </disclaimer>
+                <disclaimer lang="nl">
+                De SuperRepo generator verzamelt addons van verschillende bronnen. Daarom accepteert SuperRepo geen enkele verantwoordelijkheid voor de ingevoegde addons.[CR]
+                </disclaimer>
+                <disclaimer lang="cz">
+                Repozitár je udržiavaný komunitou Kodi a za pomoci SuperRepo Wiki, a tento preberá addons z rôznych zdrojov. Vzhľadom na to, SuperRepo nenesie žiadnu zodpovednosť za služby poskytované týmito addons.[CR]
+                </disclaimer>
+                <disclaimer lang="de">
+                Das Repository wird durch die Kodi Community gepflegt und durch unseren Generator aus mehreren Quellen zusammengestellt. Daher übernimmt SuperRepo keinerlei Verantwortung für die enthaltenen Addons.[CR]
+                </disclaimer>
+                <disclaimer lang="pt">
+                O repositório é mantido pela comunidade comunidade do Kodi e o nosso gerador de busca de addons de múltiplas fontes. Portanto SuperRepo aceita não se responsabiliza por addons incluídos.[CR]
+                </disclaimer>
+                <disclaimer lang="br">
+                O repositório é mantido pela comunidade comunidade do Kodi e o nosso gerador de busca de addons de múltiplas fontes. Portanto SuperRepo aceita não se responsabiliza por addons incluídos.[CR]
+                </disclaimer>
+                <platform>all</platform>
+                <website>https://superrepo.org/</website>
+                </extension>
+                </addon>
+
+<addon id="weather.openweathermap.extended" name="OpenWeatherMap Extended" version="3.2.7" provider-name="ronie">
+	<requires>
+		<import addon="xbmc.python" version="2.24.0"/>
+		<import addon="script.module.simplejson" version="3.3.0"/>
+		<import addon="script.openweathermap.maps" version="0.0.12"/>
+	</requires>
+	<extension point="xbmc.python.weather" library="default.py"/>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="bg">Синоптична прогноза от openweathermap.org</summary>
+		<summary lang="cs">Předpověď počasí z openweathermap.org</summary>
+		<summary lang="cy">Rhagolygon y tywydd gan openweathermap.org</summary>
+		<summary lang="de">Wettervorhersage von openweathermap.org</summary>
+		<summary lang="el">Πρόγνωση καιρού από το openweathermap.org</summary>
+		<summary lang="en">Weather forecast from openweathermap.org</summary>
+		<summary lang="en_NZ">Weather forecast from openweathermap.org</summary>
+		<summary lang="en_US">Weather forecast from openweathermap.org</summary>
+		<summary lang="es">Predicción meteorológica de openweathermap.org</summary>
+		<summary lang="fi">Sääennuste openweathermap.org :sta</summary>
+		<summary lang="fr">Prévisions météo d'openweathermap.org</summary>
+		<summary lang="fr_CA">Prévisions météorologiques de openweathermap.org</summary>
+		<summary lang="gl">Previsión meteorolóxica de openweathermap.org</summary>
+		<summary lang="he">תחזית מזג אויר מאת openweathermap.org</summary>
+		<summary lang="hr">Vremenska prognoza s openweathermap.org</summary>
+		<summary lang="hu">Időjárás előrejelzés az openweathermap.org oldalról</summary>
+		<summary lang="is">Veðurspá frá openweathermap.org</summary>
+		<summary lang="it">Previsioni meteo da openweathermap.org</summary>
+		<summary lang="ko">openweathermap.org 날씨 예보</summary>
+		<summary lang="lt">Orų prognozė iš openweathermap.org</summary>
+		<summary lang="nl">Weersvoorspelling van openweathermap.org</summary>
+		<summary lang="pl">Prognoza pogody z serwisu openweathermap.org</summary>
+		<summary lang="pt">Previsão meteorológica a partir de openweathermap.org</summary>
+		<summary lang="pt_BR">Previsão do Clima por openweathermap.org</summary>
+		<summary lang="ro">Previziuni meteo de la openweathermap.org</summary>
+		<summary lang="ru">Прогноз погоды от openweathermap.org</summary>
+		<summary lang="sl">Vremenska napoved openweathermap.org</summary>
+		<summary lang="sr_RS">Временска прогноза са openweathermap.org</summary>
+		<summary lang="sv">Väderprognos från openweathermap.org</summary>
+		<summary lang="tr">Hava durumu - openweathermap.org</summary>
+		<description lang="bg">Синоптична прогноза, предоставена от OpenWeatherMap (http://openweathermap.org/)</description>
+		<description lang="cs">Předpověď počasí poskytnuta OpenWeatherMap (http://openweathermap.org/)</description>
+		<description lang="de">Wettervorhersage bereitgestellt durch OpenWeatherMap (http://openweathermap.org/)</description>
+		<description lang="el">Η πρόγνωση καιρού παρέχεται από το OpenWeatherMap (http://openweathermap.org/)</description>
+		<description lang="en">Weather forecast provided by OpenWeatherMap (http://openweathermap.org/)</description>
+		<description lang="en_NZ">Weather forecast provided by OpenWeatherMap (http://openweathermap.org/)</description>
+		<description lang="en_US">Weather forecast provided by OpenWeatherMap (http://openweathermap.org/)</description>
+		<description lang="es">Predicción meteorológica proporcionada por OpenWeatherMap (http://openweathermap.org/)</description>
+		<description lang="fi">Sääennusteen tarjoaa OpenWeatherMap (http://openweathermap.org/)</description>
+		<description lang="fr">Prévisions météo fournies par OpenWeatherMap (http://openweathermap.org/)</description>
+		<description lang="fr_CA">Prévisions météorologiques fournies OpenWeatherMap (http://openweathermap.org/)</description>
+		<description lang="gl">Previsión meteorolóxica fornecida por OpenWeatherMap (http://openweathermap.org/)</description>
+		<description lang="he">תחזית מזג האויר מסופקת ע"י OpenWeatherMap (http://openweathermap.org/)</description>
+		<description lang="hr">Vremenska prognoza dostupna od strane OpenWeatherMap (http://openweathermap.org/)</description>
+		<description lang="hu">Az időjárás előrejelzést biztosítja az OpenWeatherMap (http://openweathermap.org/)</description>
+		<description lang="is">Veðurspá kemur frá OpenWeatherMap (http://openweathermap.org/)</description>
+		<description lang="it">Previsioni meteo fornite da OpenWeatherMap (http://openweathermap.org/)</description>
+		<description lang="ko">OpenWeatherMap (http://openweathermap.org/) 에서 제공하는 날씨 예보</description>
+		<description lang="lt">Orų prognozė pateikta OpenWeatherMap (http://openweathermap.org/)</description>
+		<description lang="nl">Weersvoorspelling voorzien door OpenWeatherMap (http://openweathermap.org/)</description>
+		<description lang="pl">Prognoza pogody dostarczana przez serwis OpenWeatherMap (http://openweathermap.org/)</description>
+		<description lang="pt">Previsão metereológica fornecida por OpenWeatherMap (http://openweathermap.org/)</description>
+		<description lang="pt_BR">Previsão do Tempo provida por OpenWeatherMap&#10;(http://openweathermap.org/)</description>
+		<description lang="ro">Prognoză meteo oferită de OpenWeatherMap (http://openweathermap.org/)</description>
+		<description lang="ru">Прогноз погоды предоставлен OpenWeatherMap&#10;(http://openweathermap.org/)</description>
+		<description lang="sl">Vremensko napoved zagotavlja OpenWeatherMap (http://openweathermap.org/)</description>
+		<description lang="sr_RS">Временску прогнозу омогућио OpenWeatherMap (http://openweathermap.org/)</description>
+		<description lang="sv">Väderprognos tillhandahållen av OpenWeatherMap (http://openweathermap.org/)</description>
+		<description lang="tr">OpenWeatherMap tarafından sağlana hava durumu tahmini (http://openweathermap.org/)</description>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE Version 2</license>
+		<forum>http://forum.kodi.tv/showthread.php?tid=207110</forum>
+		<website></website>
+		<email></email>
+		<source>https://github.com/ronie/weather.openweathermap.extended/</source>
 	</extension>
 </addon>
 </addons>
